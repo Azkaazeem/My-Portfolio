@@ -1,22 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Css Files -->
-     <link rel="stylesheet" href="./css/style.css">
-     <link rel="stylesheet" href="./css/skins/color-1.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/skins/color-1.css">
 </head>
+
 <body>
-    
+
+    <!-- Main Container Starts -->
+
+    <!-- =======================================================   Main content Starts   ======================================================= -->
+
+    <main class="main-content">
+        <!-- --------------   Aside Starts   -------------- -->
+
+        <aside class="aside">
+            <div class="logo">
+                <a href=""><span>A</span>zka</a>
+            </div>
+
+            <div class="nav-toggle">
+                <span></span>
+            </div>
+
+            <ul class="nav">
+                <li><a class="active" href="#home-section"> <i class="fa fa-home"></i> Home</a></li>
+                <li><a href=""> <i class="fa fa-user"></i> About </a> </li>
+                <li><a href=""> <i class="fa fa-list"></i> Services</a></li>
+                <li><a href=""> <i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href=""> <i class="fa fa-comments"></i> Contact</a></li>
+            </ul>
+        </aside>
+
+        <!-- -------------- Home Section --------------  -->
+        <section class="home" id="home-section">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info">
+                        <h3 class="hello">Hi there! My name is <span class="name">Azka Azeem</span></h3>
+                        <h3 class="my-profession">I`m <span class="typing">Frontend-Developer</span></h3>
+                        <p>Frontend Developer & Graphic Designer Passionate about crafting clean, modern, and interactive web experiences.</p>
+                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="./images/hero.png" alt="My img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Main Container End -->
+
 
 
     <!-- JavaScript File -->
-     <script src="./javascript/script.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
+
 </html>

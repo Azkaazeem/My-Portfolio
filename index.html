@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    
     <link rel="stylesheet" href="./css/style-switcher.css">
 
 
@@ -50,7 +51,7 @@
             </div>
 
             <ul class="nav">
-                <li><a class="active" href="#home-section"> <i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#home-section"> <i class="fa fa-home"></i> Home</a></li>
                 <li><a href="#about-section"> <i class="fa fa-user"></i> About </a> </li>
                 <li><a href="#service-section"> <i class="fa fa-list"></i> Services</a></li>
                 <li><a href="#portfolio-section"> <i class="fa fa-briefcase"></i> Portfolio</a></li>
@@ -59,7 +60,7 @@
         </aside>
 
         <!-- -------------- Home Section --------------  -->
-        <section class="home section" id="home-section">
+        <section class="home active section" id="home-section">
             <div class="container">
                 <div class="row">
                     <div class="home-info">
@@ -67,7 +68,7 @@
                         <h3 class="my-profession">I`m <span class="typing">Frontend-Developer</span></h3>
                         <p>Combining design with logic, I create user-friendly websites that stand out. I love solving
                             coding challenges to build modern interfaces that are easy to use.</p>
-                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                        <a href="#" class="btn">Download CV</a>
                     </div>
                     <div class="home-img padd-15">
                         <img src="./images/hero.png" alt="My img">
@@ -148,8 +149,7 @@
 
                                 <div class="row">
                                     <div class="buttons padd-15">
-                                        <a href="" class="btn">Download CV</a>
-                                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                                        <a href="#contact-section" data-section-index="1" class="btn hire-me">Hire Me</a>
                                     </div>
                                 </div>
 
@@ -282,7 +282,7 @@
                                                     organization, professional documentation, and presentation skills,
                                                     which now help me manage project documentation efficiently.</p>
                                             </div>
-<br> 
+                                            <br>
                                         </div>
                                     </div>
                                 </div>
@@ -450,7 +450,7 @@
                 </div>
             </div>
 
-        
+
         </section>
 
         <!-- ------------- Contact Section --------------   -->
@@ -471,7 +471,7 @@
                     <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-phone"></i></div>
                         <h4>Call us on</h4>
-                        <p>+92 3161132 149</p>
+                        <p> <a href="https://wa.me/923161132149" target="_blank"> +92 316 1132 149</a> </p>
                     </div>
 
                     <!-- Contact Info item -->
@@ -551,7 +551,7 @@
             <i class="fas fa-cog fa-spin"></i>
         </div>
         <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
+            <i class="fas"></i>
         </div>
         <h4>Theme Colors</h4>
         <div class="colors">
@@ -561,11 +561,13 @@
             <span class="color-4" onclick="setActiveStyle('color-4')"></span>
             <span class="color-5" onclick="setActiveStyle('color-5')"></span>
 
+
         </div>
     </div>
 
 
     <!-- JavaScript File -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./javascript/script.js"></script>
     <script src="./javascript/style-switcher.js"></script>
 </body>

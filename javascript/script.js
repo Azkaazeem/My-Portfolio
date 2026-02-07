@@ -32,15 +32,13 @@ for (let i = 0; i < totalNavList; i++) {
 
     a.addEventListener('click', function () {
 
-        // removeBackSection();
-        for (let i = 0; i < totalSection; i++) {
-            allSection[i].classList.remove('back-section');
-        }
+        removeBackSection()
 
         for (let j = 0; j < totalNavList; j++) {
             if (navList[j].querySelector('a').classList.contains('active')) {
+                addBackSection(j)
                 // console.log('back-section' + navList[j].querySelector('a'));
-                allSection[j].classList.add('back-section');
+                // allSection[j].classList.add('back-section');
             }
 
             navList[j].querySelector('a').classList.remove('active');
@@ -55,17 +53,24 @@ for (let i = 0; i < totalNavList; i++) {
     })
 }
 
+function removeBackSection() {
+    for (let i = 0; i < totalNavList; i++) {
+    allSection[i].classList.remove('back-section');
+}
+}
+
+function addBackSection(num) {
+    allSection[num].classList.add('back-section');
+}
+
 function showSection(element) {
     for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove('active');
     }
-
     const target = element.getAttribute("href").split('#')[1];
     // console.log(target);
     document.querySelector('#' + target).classList.add('active')
 }
-
-
 
 function updateNav(element) {
     // console.log(element.getAttribute("href").split('#')[1]);
@@ -74,7 +79,7 @@ function updateNav(element) {
         const target = element.getAttribute("href").split('#')[1];
 
         if (target === navList[i].querySelector('a').getAttribute('href').split('#')[1]) {
-        navList[i].querySelector('a').classList.add('active');
+            navList[i].querySelector('a').classList.add('active');
         }
     }
 
@@ -86,6 +91,8 @@ document.querySelector('.hire-me').addEventListener('click', function () {
     aside = document.querySelector('.aside');
     showSection(this);
     updateNav(this);
+    removeBackSection();
+    addBackSection(sectionIndex);
 
 })
 

@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-    
+
     <link rel="stylesheet" href="./css/style-switcher.css">
 
 
@@ -68,7 +68,7 @@
                         <h3 class="my-profession">I`m <span class="typing">Frontend-Developer</span></h3>
                         <p>Combining design with logic, I create user-friendly websites that stand out. I love solving
                             coding challenges to build modern interfaces that are easy to use.</p>
-                        <a href="#" class="btn">Download CV</a>
+                        <a href="my-cv.pdf" download class="btn">Download CV</a>
                     </div>
                     <div class="home-img padd-15">
                         <img src="./images/hero.png" alt="My img">
@@ -149,7 +149,8 @@
 
                                 <div class="row">
                                     <div class="buttons padd-15">
-                                        <a href="#contact-section" data-section-index="1" class="btn hire-me">Hire Me</a>
+                                        <a href="#contact-section" data-section-index="1" class="btn hire-me">Hire
+                                            Me</a>
                                     </div>
                                 </div>
 
@@ -504,14 +505,14 @@
                         <div class="row">
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full Name">
+                                    <input type="text" class="form-control" placeholder="Full Name" id="full_name">
                                 </div>
                             </div>
 
 
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
+                                    <input type="email" class="form-control" placeholder="Email" id="email">
                                 </div>
                             </div>
                         </div>
@@ -519,7 +520,7 @@
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject">
+                                    <input type="text" class="form-control" placeholder="Subject" id="subject">
                                 </div>
                             </div>
                         </div>
@@ -527,14 +528,14 @@
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <textarea name="" id="" class="form-control" placeholder="Message"></textarea>
+                                    <textarea name="" class="form-control" placeholder="Message" id="message"></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-item col-12 padd-15">
-                                <button type="submit" class="btn">Send Message</button>
+                                <button type="submit" class="btn" id="submitBtn">Send Message</button>
                             </div>
                         </div>
                     </div>
@@ -567,7 +568,9 @@
 
 
     <!-- JavaScript File -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./javascript/script.js"></script>
     <script src="./javascript/style-switcher.js"></script>
 </body>

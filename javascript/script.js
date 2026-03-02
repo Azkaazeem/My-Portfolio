@@ -1,7 +1,7 @@
 // ------------------------------------   Typing Animation   ------------------------------------
 
 var typed = new Typed('.typing', {
-    strings: ["", "Frontend Developer", "Graphic Designer"],
+    strings: [" ", "Frontend Developer", "Graphic Designer" , " "],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
@@ -107,6 +107,23 @@ function asideSectionTogglerBtn() {
     aside.classList.toggle('open');
     navTogglerBtn.classList.toggle('open');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
